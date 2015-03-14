@@ -60,6 +60,7 @@
                 <div>
                     <div>
                         <input id="addbutt" name="add" type="submit" value="add">
+                        <button type="reset" onclick="clear()">clear</button>
                     </div>
                 </div>
             </form>
@@ -190,6 +191,7 @@
             <p id = "us">produce of <a href="https://github.com/roryem">rory malcolm</a> and <a href = "http://chrispollock.uk">chris pollock</a><br>&#169; copyright listar 2015</p>
         </footer>
     </body>
+    <script src="js/clear.js" type="text/javascript"></script>
     <script src="js/add.js" type="text/javascript"></script>
     <script src="js/vote.js" type="text/javascript"></script>
     <script src="js/tuber.js" type="text/javascript"></script>
