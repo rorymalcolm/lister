@@ -1,5 +1,1 @@
-settings.py
-settings.pyc
-*.pyc
-*.name
-*.xml
+.DS_Store
