@@ -13,12 +13,6 @@ $(".keybutt").click(function(){
         $('#login').addClass("up");
         $(this).delay(2000).queue(function(){
             $('#login').removeClass("up");
-            $('#login').addClass("success");
-            $('#loginmask').addClass("success");
-            $(this).dequeue();
-        });
-        $(this).delay(2000).queue(function(){
-            $("#loginmask").hide();
             $(this).dequeue();
         });
     }
