@@ -22,3 +22,4 @@ class Playlist(models.Model):
     password = models.TextField(max_length=255)
     def __str__(self):
         return (self.password)
+
