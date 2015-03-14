@@ -195,4 +195,5 @@
     <script src="js/tuber.js" type="text/javascript"></script>
     <script src="js/drop.js" type="text/javascript"></script>
     <script src="js/login.js" type="text/javascript"></script>
+    <script src="js/ajaxadd.js" type="text/javascript"></script>
 </html>
