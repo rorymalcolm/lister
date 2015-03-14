@@ -97,10 +97,10 @@ header{
     transition: height 1s ease-in-out, visibility 0s ease 1s, border-bottom 0s ease 1s;
 }
 #login.active{
-    height: 100px;
+    height: 75px;
     border-bottom: 1px solid rgb(99, 99, 99);
     visibility: visible;
-    transition: height 1s ease-in-out, visibility 0s ease 0s, border-bottom 0s ease, -webkit-filter 0.2s;
+    transition: height 1s ease-in-out, visibility 0s ease 0s, border-bottom 0s ease, background-color 0.5s;
 }
 /*#loginmask{
     display: none;
@@ -122,25 +122,10 @@ header{
     padding: 5px;
     transition: 0.5s;
 }
-@media(max-width: 400px){
-    #login{
-        top: 50px;
-        left: 0;
-        margin-left: 0px;
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-} */
-#login.success{
-    top: -250px;
-}
-#loginmask.success{
-    opacity: 0;
-}
+*/
 #login > p{
     word-wrap: break-word;
-    text-align: center;
+    padding-top: 10px;
     margin: 0px 0px 10px 0px;
 }
 #login > label{
@@ -149,7 +134,7 @@ header{
     margin-right: 5px;
 }
 #keyin{
-    width: calc(100% - 75px);
+    width: calc(100% - 130px);
     margin-bottom: 5px;
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
