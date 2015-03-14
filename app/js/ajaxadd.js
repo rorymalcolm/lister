@@ -12,14 +12,18 @@ else
 {
 $.ajax({
 type: "POST",
-url: "ajaxtrackpost.php",
+url: "imports/ajaxtrackpost.php",
 data: dataString,
 cache: false,
 success: function(result){
-alert(result);
+    $('#thumbnail').css('background-image', 'url()');
+    $(".cc").show();
+    $("#linkin").val("");
+    $("#titlein").val("");
 }
 });
 }
 return false;
 });
 });
+

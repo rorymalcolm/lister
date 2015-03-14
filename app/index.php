@@ -44,7 +44,7 @@
             <!--<div id="goodkeymessage">bad link</div>-->
         </div>
         <div id = "add">
-            <form id = "addform" action="">
+            <form id = "addform" action="ajaxadd.js">
                 <div>
                     <label for="linkin">link</label>
                     <div>

@@ -16,9 +16,3 @@ $("#editlink").click(function(){
         $("#editlink").text("edit");
     }
 });
-$("#addbutt").hover(function (){
-    $('#thumbnail').css('background-image', 'url()');
-    $(".cc").show();
-    $("#linkin").val("");
-    $("#titlein").val("");
-});
