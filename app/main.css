@@ -183,16 +183,16 @@ header{
     height: 100%;
     padding-top: 10px;
 }
-form > div{
+#addform > div{
     margin: 0px 0px 8px 0px;
     overflow: hidden;
     clear: both;
 }
-form > div > label{
+#addform > div > label{
 	float: left;
 	width: 50px;
 }
-form > div > div{
+#addform > div > div{
     width: calc(100% - 50px);
     float: right;
 }
@@ -212,6 +212,8 @@ form > div > div{
     line-height: 16px;
     padding: 0px 5px 0px 5px;
     border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 #clearbutt:after {
 	width: 15px;
@@ -276,10 +278,10 @@ form > div > div{
     #thumbwrap{
         display: none;
     }
-    form > div > label{
+    #addform > div > label{
         float: none;
     }
-    form > div > div, form > div > fieldset > div{
+    #addform > div > div, #addform > div > fieldset > div{
         width: 100%;
         float: none;
     }

@@ -41,7 +41,7 @@
             <div class="loginmessage"></div>
             </div>
         <div id = "add">
-            <form id = "addform">
+            <div id = "addform">
                 <div>
                     <label for="linkin">link</label>
                     <div>
@@ -60,7 +60,7 @@
                         <input id="addbutt" name="add" type="submit" value="add">
                     </div>
                 </div>
-            </form>
+            </div>
             <div id = "thumbwrap">
                 <div id = "thumbnail">
                     <div class="cc" style="background-color:khaki"></div>
