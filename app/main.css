@@ -256,7 +256,7 @@ header{
 .cc.found{
     visibility: hidden;
 }
-#dropmessage, #badlinkmessage{
+#dropmessage{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -403,12 +403,17 @@ footer{
     position: absolute;
     width: 100%;
     height: 100%;
-    line-height: 100%;
     text-align: center;
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0.71);
     display: none;
+}
+.loginmessage{
+    line-height: 75px;
+}
+.addmessage{
+    line-height: 100px;
 }
 button, #addbutt{
     background: white!important;
