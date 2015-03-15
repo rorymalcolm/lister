@@ -6,7 +6,7 @@ var title = $("#titlein").val();
 var dataString = 'title='+ title + '&url='+ url;
 if(title==''||url=='')
 {
-alert("Please Fill All Fields");
+message("Please Fill All Fields");
 }
 else
 {
@@ -16,10 +16,7 @@ url: "imports/ajaxtrackpost.php",
 data: dataString,
 cache: false,
 success: function(result){
-    $('#thumbnail').css('background-image', 'url()');
-    $(".cc").show();
-    $("#linkin").val("");
-    $("#titlein").val("");
+    clearform();
 }
 });
 }

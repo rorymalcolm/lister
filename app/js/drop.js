@@ -1,5 +1,3 @@
-var dropZone = document.getElementById('add');
-
 var drag_over = function(e) {
     e.stopPropagation();
     e.preventDefault();
@@ -35,9 +33,8 @@ var drag_drop = function(e){
     }
 };
 
-var overArea = document.getElementById('add');
 var dropMask = document.getElementById('dropmessage');
 
-overArea.addEventListener('dragover', drag_over, false);
+document.addEventListener('dragover', drag_over, false);
 dropMask.addEventListener('dragleave', drag_leave, false);
 dropMask.addEventListener('drop', drag_drop, false);

@@ -16,3 +16,9 @@ $("#editlink").click(function(){
         $("#editlink").text("edit");
     }
 });
+function clearform(){
+    $('#thumbnail').css('background-image', 'none');
+    $(".cc").show();
+    $("#linkin").val("");
+    $("#titlein").val("");
+}
