@@ -12,7 +12,7 @@ else
 {
 $.ajax({
 type: "POST",
-url: "imports/ajaxtrackpost.php",
+url: "includes/ajaxtrackpost.php",
 data: dataString,
 cache: false,
 success: function(result){
