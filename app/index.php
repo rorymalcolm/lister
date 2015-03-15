@@ -36,7 +36,7 @@
             <div id="login">
                 <p>this list requires a keyword in order to edit. please provide it below</p>
                 <label for="keyin">keyword</label>
-                <input id="keyin" name="keyin" type="password" autocomplete="off" spellcheck="false" maxlength="255">
+                <input id="keyin" name="keyin" type="password" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) login()">
                 <button class = "keybutt" type="button">go</button>
             <div class="loginmessage"></div>
             </div>
