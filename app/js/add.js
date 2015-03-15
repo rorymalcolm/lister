@@ -16,6 +16,10 @@ $("#editlink").click(function(){
         $("#editlink").text("edit");
     }
 });
+$("#clearbutt").click(function(){
+    clearform();
+});
+
 function clearform(){
     $('#thumbnail').css('background-image', 'none');
     $(".cc").show();

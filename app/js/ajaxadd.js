@@ -6,7 +6,7 @@ var title = $("#titlein").val();
 var dataString = 'title='+ title + '&url='+ url;
 if(title==''||url=='')
 {
-message("Please Fill All Fields");
+addmessage("please fill in all fields");
 }
 else
 {

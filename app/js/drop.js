@@ -26,15 +26,13 @@ var drag_drop = function(e){
         $(".cc").hide();
         $('#thumbnail').css('background-image', 'url(http://img.youtube.com/vi/'+id+'/0.jpg)');
     } else {
-        $('#badlinkmessage').show();
-        setTimeout(function(){
-            $('#badlinkmessage').hide();
-        }, 2000);
+        addmessage("bad link");
     }
 };
 
+var zone = document.getElementById('add');
 var dropMask = document.getElementById('dropmessage');
 
-document.addEventListener('dragover', drag_over, false);
+zone.addEventListener('dragover', drag_over, false);
 dropMask.addEventListener('dragleave', drag_leave, false);
 dropMask.addEventListener('drop', drag_drop, false);

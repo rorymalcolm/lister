@@ -148,16 +148,7 @@ header{
     height: 20px;
     width: 50px;
 }
-#badkeymessage{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.71);
-    display: none;
-}
+
 
 
 
@@ -215,13 +206,12 @@ form > div > div{
 #clearbutt{
     position: absolute;
     border:1px solid transparent;
-    background-color: transparent!important;
     right: 170px;
     top: 14px;
-    width: 20px;
     height: 16px;
     line-height: 16px;
-    padding: 0;
+    padding: 0px 5px 0px 5px;
+    border-left: 1px solid #ccc;
 }
 #clearbutt:after {
 	width: 15px;
@@ -407,6 +397,17 @@ footer{
 
 /*               MISC              */
 
+.loginmessage, .addmessage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.71);
+    display: none;
+}
 button, #addbutt{
     background: white!important;
     border-top: 1px solid #eee;
