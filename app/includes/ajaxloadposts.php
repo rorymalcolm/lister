@@ -2,7 +2,7 @@
 $db = new PDO('mysql:host=localhost;dbname=listar;charset=utf8', 'root', 'root');
 try{
     foreach($db->query('SELECT * FROM tracks ORDER BY karma DESC') as $row){
-        echo '<li class = "trackwrap">';
+        echo '<li id="'.$row['id'].'" class = "trackwrap">';
         echo '<div class = "scorewrap">';
         echo '<p class = "trackscore">'.$row['karma'].' points</p>';
         echo '<button class = "upvote" type="button">+</button>';
