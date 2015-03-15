@@ -1,5 +1,5 @@
 <?php
-$connection = mysql_connect("localhost", "root", "");
+$connection = mysql_connect("localhost", "root", "root");
 $db = mysql_select_db("listar", $connection);
 $title=$_POST['title'];
 $url=$_POST['url'];

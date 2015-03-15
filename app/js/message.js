@@ -18,10 +18,3 @@ function addmessage(text){
         $('.addmessage').hide();
     }, 2000);
 }
-
-$(".upvote").click(function(){
-    addmessage("fuck you too");
-});
-$(".downvote").click(function(){
-    loginmessage("fuck you");
-});

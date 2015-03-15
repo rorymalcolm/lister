@@ -1,5 +1,5 @@
 <?php
-$db = new PDO('mysql:host=localhost;dbname=listar;charset=utf8', 'root', '');
+$db = new PDO('mysql:host=localhost;dbname=listar;charset=utf8', 'root', 'root');
 try{
     foreach($db->query('SELECT * FROM tracks ORDER BY karma DESC') as $row){
         echo '<li class = "trackwrap">';
