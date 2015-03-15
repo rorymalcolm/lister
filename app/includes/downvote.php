@@ -1,10 +1,8 @@
 <?php
 $connection = mysql_connect("localhost", "root", "");
 $db = mysql_select_db("listar", $connection);
-$title=$_POST['title'];
-$url=$_POST['url'];
-$karma=$_POST['karma'];
+$id=$_POST['id'];
 //Insert query
-$query = mysql_query("insert into tracks(title, url) values ('$title', '$url ')");
+$query = mysql_query("UPDATE tracks SET karma = karma - 1 WHERE id = ".$id);
 mysql_close($connection); // Connection Closed
 ?>
