@@ -6,7 +6,7 @@ $(function() {
             var data = $(element).val();
             var id = ytVidId(data);
             if (id !== false){
-                getYtData(id);
+                getYtData(data, id);
             }
         }, 500);
     })
@@ -15,7 +15,7 @@ function ytVidId(url) {
     var p = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
     return (url.match(p)) ? RegExp.$1 : false;
 }
-function getYtData(id){
+function getYtData(data, id){
     $.getJSON('http://gdata.youtube.com/feeds/api/videos/'+id+'?v=2&alt=jsonc',function(data,status,xhr){
         var title = data.data.title;
         $("#titlein").val(title);

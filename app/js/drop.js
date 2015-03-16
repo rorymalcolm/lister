@@ -18,13 +18,7 @@ var drag_drop = function(e){
     var data = e.dataTransfer.getData("text");
     var id = ytVidId(data);
     if (id !== false){
-        $.getJSON('http://gdata.youtube.com/feeds/api/videos/'+id+'?v=2&alt=jsonc',function(data,status,xhr){
-            var title = data.data.title;
-            $("#titlein").val(title);
-        });
-        $("#linkin").val(data);
-        $(".cc").hide();
-        $('#thumbnail').css('background-image', 'url(http://img.youtube.com/vi/'+id+'/0.jpg)');
+        getYtData(data, id);
     } else {
         addmessage("bad link");
     }

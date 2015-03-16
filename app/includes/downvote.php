@@ -1,5 +1,5 @@
 <?php
-$connection = mysql_connect("localhost", "root", "");
+$connection = mysql_connect("localhost", "root", "root");
 $db = mysql_select_db("listar", $connection);
 $id=$_POST['id'];
 //Insert query

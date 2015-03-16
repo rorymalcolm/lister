@@ -45,14 +45,14 @@
                 <div>
                     <label for="linkin">link</label>
                     <div>
-                        <input id="linkin" name="linkin" type="url" autocomplete="off" spellcheck="false" maxlength="255">
+                        <input id="linkin" name="linkin" type="url" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) document.getElementById('addbutt').click()">
                         <button id="clearbutt">clear</button>
                     </div>
                 </div>
                 <div>
                     <label for="titlein">title</label>
                     <div>
-                        <input id="titlein" name="titlein" type="text" autocomplete="off" spellcheck="false" maxlength="255">
+                        <input id="titlein" name="titlein" type="text" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) document.getElementById('addbutt').click()">
                     </div>
                 </div>
                 <div>
@@ -80,6 +80,7 @@
         </ul>
         <footer>
             <p id = "us">produce of <a href="https://github.com/roryem">rory malcolm</a> and <a href = "http://chrispollock.uk">chris pollock</a><br>&#169; copyright listar 2015</p>
+            <p id = "about"><a href="/about.html">about</a></p>
             
         </footer>
     </body>
@@ -90,5 +91,4 @@
     <script src="js/login.js" type="text/javascript"></script>
     <script src="js/ajaxadd.js" type="text/javascript"></script>
     <script src="js/message.js" type="text/javascript"></script>
-    <script src="js/load.js" type="text/javascript"></script>
 </html>

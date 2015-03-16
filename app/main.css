@@ -307,7 +307,6 @@ header{
     padding: 10px 20px 10px 20px;
 }
 .trackwrap{
-    /*background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(214, 205, 189) 100%);*/
     height: 24px;
     width: 100%;
     margin-bottom: 2px;
@@ -339,8 +338,10 @@ header{
 }
 .upvote, .downvote{
     display: inline;
-    height: 20px;
-    width: 20px;
+    height: 19px;
+    width: 19px;
+    margin-left: 3px;
+    padding: 0;
 }
 
 
@@ -363,8 +364,14 @@ footer{
 #us{
     position: absolute;
     font-size: 10px;
-    top: -2px;
+    top: -3px;
     left: 20px;
+}
+#about{
+    position: absolute;
+    font-size: 10px;
+    top: 3px;
+    right: 20px;
 }
 
 
@@ -414,6 +421,9 @@ footer{
 }
 .addmessage{
     line-height: 100px;
+}
+#aboutmain{
+    padding: 10px 20px 10px 20px;
 }
 button, #addbutt{
     background: white!important;
