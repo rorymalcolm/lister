@@ -20,6 +20,7 @@ $("#editlink").click(function(){
 });
 $("#clearbutt").click(function(){
     clearform();
+    loadPosts();
 });
 
 function clearform(){
