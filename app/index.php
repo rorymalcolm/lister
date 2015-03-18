@@ -79,7 +79,7 @@
             <?php include("includes/ajaxloadposts.php"); ?>
         </ul>
         <footer>
-            <p id = "us">produce of <a href="https://github.com/roryem">rory malcolm</a> and <a href = "http://chrispollock.uk">chris pollock</a><br>&#169; copyright listar 2015</p>
+            <p id = "us">produce of <a href="https://github.com/rorymalcolm">rory malcolm</a> and <a href = "https://github.com/chrispollock">chris pollock</a><br>&#169; copyright listar 2015</p>
             <p id = "about"><a href="/about.html">about</a></p>
             
         </footer>

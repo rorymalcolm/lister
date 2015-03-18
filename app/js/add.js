@@ -15,6 +15,7 @@ $("#editlink").click(function(){
         $("#keyin").focus();
     }
     else{
+        $(".scorewrap").show();
         $("#editlink").text("edit");
     }
 });
