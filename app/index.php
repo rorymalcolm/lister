@@ -84,6 +84,7 @@
             
         </footer>
     </body>
+    <script src="js/auth.js" type="text/javascript"></script>
     <script src="js/add.js" type="text/javascript"></script>
     <script src="js/vote.js" type="text/javascript"></script>
     <script src="js/tuber.js" type="text/javascript"></script>
