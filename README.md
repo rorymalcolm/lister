@@ -7,4 +7,4 @@ users submit tracks, vote on them, after the users have voted the resultant list
 
 # wip gifs
 
-[adding via drag and drop](http://i.imgur.com/pkRhApr.gif)
+![adding via drag and drop](http://i.imgur.com/pkRhApr.gif)
