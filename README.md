@@ -1,8 +1,8 @@
-# listar
+# lister
 created by @chrispollock and @rorymalcolm
 
 # about
-listar is an app which aims to streamline the banger hunting > bangers playing process 
+lister is an app which aims to streamline the song hunting > song crowd approval > song playing process 
 
 users submit tracks, vote on them, after the users have voted the resultant list of tracks is compiled into a playlist
 
