@@ -5,6 +5,12 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+::selection {
+  background: khaki;
+}
+::-moz-selection {
+  background: khaki;
+}
 html{
     background: white;
     font-family: 'Lora', serif;
@@ -385,11 +391,11 @@ footer{
 /*               COLOURS              */
 
 .up{
-    background: rgba(0, 255, 20, 0.4);
+    background: springgreen;
     transition: 0.5s;
 }
 .down{
-    background: rgba(255, 0, 0, 0.4);
+    background: tomato;
     transition: 0.5s;
 }
 .waiting{
@@ -461,5 +467,5 @@ a:hover{
     text-decoration-color: rgb(220, 20, 242);
 }
 /*a:visited{
-    color: red;
+    color: green;
 }*/
