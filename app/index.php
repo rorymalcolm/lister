@@ -4,7 +4,8 @@
         <title>lister</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="main.css" type="text/css" />
+		<link rel="stylesheet" href="main.css" type="text/css"/>
+		<link rel="stylesheet" href="main.css" type="text/css"/>
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lora:400' type='text/css'>
         <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
         <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
