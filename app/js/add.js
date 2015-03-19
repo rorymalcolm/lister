@@ -23,7 +23,6 @@ $("#clearbutt").click(function(){
     clearform();
     loadPosts();
 });
-
 function clearform(){
     $('#thumbnail').css('background-image', 'none');
     $(".cc").show();
