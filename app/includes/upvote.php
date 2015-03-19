@@ -1,8 +1,8 @@
 <?php
-$connection = mysql_connect("localhost", "root", "root");
-$db = mysql_select_db("listar", $connection);
+$db = new PDO('mysql:host=localhost;dbname=listar;charset=utf8', 'root', '');
 $id=$_POST['id'];
 //Insert query
-$query = mysql_query("UPDATE tracks SET karma = karma + 1 WHERE id = ".$id);
-mysql_close($connection); // Connection Closed
+$sql = "UPDATE tracks SET karma = karma + 1 WHERE id = ?";
+$q=$db->prepare($sql);
+$q->execute(array($id));
 ?>
