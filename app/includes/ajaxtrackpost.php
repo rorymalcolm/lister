@@ -1,10 +1,13 @@
 <?php
-$connection = mysql_connect("localhost", "root", "root");
-$db = mysql_select_db("listar", $connection);
 $title=$_POST['title'];
 $url=$_POST['url'];
 $karma=$_POST['karma'];
-//Insert query
-$query = mysql_query("insert into tracks(title, url) values ('$title', '$url ')");
-mysql_close($connection); // Connection Closed
+$db = new PDO('mysql:host=localhost;dbname=listar;charset=utf8', 'root', '');
+try{
+    $db->query("insert into tracks(title, url) values ('$title', '$url ')");
+}
+catch(PDOException $ex) {
+    echo "An Error occured!";
+    some_logging_function($ex->getMessage());
+}
 ?>
