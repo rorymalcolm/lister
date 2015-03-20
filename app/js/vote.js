@@ -11,6 +11,7 @@ $(".upvote").click(function(){
         success: function(result){
         }
     });
+    loadPosts();
     $(this).delay(700).queue(function(){
         $(this).closest('.trackwrap').removeClass("up");
         $(this).dequeue();
@@ -29,6 +30,7 @@ $(".downvote").click(function(){
         success: function(result){
         }
     });
+    loadPost();
     $(this).delay(700).queue(function(){
         $(this).closest('.trackwrap').removeClass("down");
         $(this).dequeue();

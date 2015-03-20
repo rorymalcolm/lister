@@ -1,15 +1,12 @@
 function loadPosts(){
-    var dataString = "";
-    $(document).ready(function(){
+    var dataString = "playlist_id=0";
     $.ajax({
     type: "GET",
-    url: "includes/ajaxtrackpost.php",
+    url: "includes/ajaxloadposts.php",
     data: dataString,
     cache: false,
     success: function(result){
         clearform();
     }
-    });
-    return false;
     });
 }
