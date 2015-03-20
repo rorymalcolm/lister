@@ -94,4 +94,5 @@
     <script src="js/ajaxadd.js" type="text/javascript"></script>
     <script src="js/message.js" type="text/javascript"></script>
     <script src="js/load.js" type="text/javascript"></script>
+    <script src="js/clearposts.js" type="text/javascript"></script>
 </html>

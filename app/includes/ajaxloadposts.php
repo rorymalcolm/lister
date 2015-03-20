@@ -1,6 +1,13 @@
 <?php
 $playlist_id = 0;
+<<<<<<< HEAD
 $db = new PDO('mysql:host=localhost;dbname=listar;charset=utf8', 'root', '');
+=======
+if($playlist_id == NULL){
+    $playlist_id = 0;
+}
+$db = new PDO('mysql:host=localhost;dbname=listar;charset=utf8', 'root', 'root');
+>>>>>>> 6b4675577aab133cb53b88e4eeca9edc432b809a
 try{
     foreach($db->query('SELECT * FROM tracks WHERE playlist_id = '.$playlist_id.' ORDER BY karma DESC') as $row){
         echo '<li id="'.$row['id'].'" class = "trackwrap">';
