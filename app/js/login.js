@@ -6,8 +6,14 @@ function login(){
     if (x == "banana"){
         loginmessage("keyword correct. fetching list");
         $(".scorewrap").hide();
+        $("#keyin").val("");
     }
     else {
-        loginmessage("wrong keyword");
+        if (x == ""){
+            loginmessage("you need to enter something");
+        }
+        else{
+            loginmessage("wrong keyword");
+        }
     }
-} 
+}

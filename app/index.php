@@ -4,7 +4,8 @@
         <title>lister</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="main.css" type="text/css" />
+		<link rel="stylesheet" href="main.css" type="text/css"/>
+		<link rel="stylesheet" href="main.css" type="text/css"/>
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lora:400' type='text/css'>
         <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
         <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
@@ -34,7 +35,7 @@
             <p id = "editlink">edit</p>
         </header>
             <div id="login">
-                <p>this list requires a keyword in order to edit. please provide it below</p>
+                <p>to edit, please provide the keyword below</p>
                 <label for="keyin">keyword</label>
                 <input id="keyin" name="keyin" type="password" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) login()">
                 <button class = "keybutt" type="button">go</button>
