@@ -1,13 +1,3 @@
 function loadPosts(){
-    var dataString = "playlist_id=0";
-    $.ajax({
-    type: "GET",
-    url: "includes/ajaxloadposts.php",
-    data: dataString,
-    cache: false,
-    success: function(result){
-        //commented out because this is called when you vote
-        //clearposts();
-    }
-    });
+    $.post("includes/ajaxloadposts.php", {playlist_id:"0"});
 }
