@@ -6,7 +6,8 @@ function loadPosts(){
     data: dataString,
     cache: false,
     success: function(result){
-        clearform();
+        //commented out because this is called when you vote
+        //clearposts();
     }
     });
 }

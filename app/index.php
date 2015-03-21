@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="main.css" type="text/css"/>
 		<link rel="stylesheet" href="main.css" type="text/css"/>
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lora:400' type='text/css'>
-        <script src="http://code.jquery.com/jquery-2.0.0.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
@@ -31,10 +31,25 @@
         <header>
             <h1 id = "logo">Lister</h1>
             <p id = "sub">we have an open plan office</p>
-            <p id = "addlink">add</p>
-            <p id = "editlink">edit</p>
+            <p class="headerlinks" id="golink">go</p>
+            <p class="headerlinks" id="addlink">add</p>
+            <p class="headerlinks" id="editlink">edit</p>
         </header>
-            <div id="login">
+        <div id="go">
+            <div id="loaderwrap">
+                <div id="loader">
+                    <div class="cc" style="background-color:khaki"></div>
+                    <div class="cc" style="background-color:cyan"></div>
+                    <div class="cc" style="background-color:springgreen"></div>
+                    <div class="cc" style="background-color:violet"></div>
+                    <div class="cc" style="background-color:tomato"></div>
+                    <div class="cc" style="background-color:royalblue"></div>
+                    <div class="cc" style="background-color:#3b3b3b"></div>
+                </div>
+                <div id="loadertext">generating playlist</div>
+            </div>
+        </div>
+        <div id="login">
                 <p>to edit, please provide the keyword below</p>
                 <label for="keyin">keyword</label>
                 <input id="keyin" name="keyin" type="password" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) login()">

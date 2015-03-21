@@ -30,7 +30,7 @@ $(".downvote").click(function(){
         success: function(result){
         }
     });
-    loadPost();
+    loadPosts();
     $(this).delay(700).queue(function(){
         $(this).closest('.trackwrap').removeClass("down");
         $(this).dequeue();

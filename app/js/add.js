@@ -1,3 +1,17 @@
+$("#golink").click(function(){
+    $("#go").toggleClass("active");
+    clearform();
+        $(this).delay(2000).queue(function(){
+            $("#loaderwrap").addClass("ready");
+            $('#loadertext').text("ready. click to play");
+            $(this).dequeue();
+        });
+        $(this).delay(2000).queue(function(){
+            $("#loaderwrap").addClass("failed");
+            $('#loadertext').text("error... please retry");
+            $(this).dequeue();
+        });
+});
 $("#addlink").click(function(){ 
     $("#add").toggleClass("active");
     if ($("#add").hasClass("active")){

@@ -4,13 +4,11 @@ var drag_over = function(e) {
     e.dataTransfer.dropEffect = 'copy';
     $('#dropmessage').show();
 };
-
 var drag_leave = function(e) {
     e.stopPropagation();
     e.preventDefault();
     $('#dropmessage').hide();
 };
-
 var drag_drop = function(e){
     e.stopPropagation();
     e.preventDefault();
@@ -23,7 +21,6 @@ var drag_drop = function(e){
         addmessage("bad link");
     }
 };
-
 var zone = document.getElementById('add');
 var dropMask = document.getElementById('dropmessage');
 

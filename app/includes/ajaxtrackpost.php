@@ -2,7 +2,7 @@
 $title=$_POST['title'];
 $url=$_POST['url'];
 $karma=$_POST['karma'];
-$db = new PDO('mysql:host=localhost;dbname=listar;charset=utf8', 'root', 'root');
+$db = new PDO('mysql:host=localhost;dbname=listar;charset=utf8', 'root', '');
 try{
     $db->query("insert into tracks(title, url) values ('$title', '$url ')");
 }
