@@ -36,6 +36,11 @@
             <p class="headerlinks" id="editlink">edit</p>
         </header>
         <div id="go">
+            <div id="playlist-id'">id</div>
+            <div id="playlist-title">title</div>
+            <div id="playlist-description">description</div>
+            <div id="status">status</div>
+            <button id="playlist-button">button</button>
             <div id="loaderwrap">
                 <div id="loader">
                     <div class="cc" style="background-color:khaki"></div>
@@ -50,7 +55,7 @@
             </div>
         </div>
         <div id="login">
-                <p>to edit, please provide the keyword below</p>
+            <p>to edit, please provide the keyword below</p>
                 <label for="keyin">keyword</label>
                 <input id="keyin" name="keyin" type="password" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) login()">
                 <button class = "keybutt" type="button">go</button>
@@ -100,14 +105,16 @@
             
         </footer>
     </body>
-    <script src="js/auth.js" type="text/javascript"></script>
+    <script src="https://apis.google.com/js/client:plusone.js?onload=makeAPICall" type="text/javascript"></script>
     <script src="js/add.js" type="text/javascript"></script>
-    <script src="js/vote.js" type="text/javascript"></script>
-    <script src="js/tuber.js" type="text/javascript"></script>
-    <script src="js/drop.js" type="text/javascript"></script>
-    <script src="js/login.js" type="text/javascript"></script>
     <script src="js/ajaxadd.js" type="text/javascript"></script>
-    <script src="js/message.js" type="text/javascript"></script>
-    <script src="js/load.js" type="text/javascript"></script>
+    <script src="js/auth.js" type="text/javascript"></script>
     <script src="js/clearposts.js" type="text/javascript"></script>
+    <script src="js/drop.js" type="text/javascript"></script>
+    <script src="js/go.js" type="text/javascript"></script>
+    <script src="js/load.js" type="text/javascript"></script>
+    <script src="js/login.js" type="text/javascript"></script>
+    <script src="js/message.js" type="text/javascript"></script>
+    <script src="js/tuber.js" type="text/javascript"></script>
+    <script src="js/vote.js" type="text/javascript"></script>
 </html>

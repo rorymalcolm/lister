@@ -87,6 +87,7 @@ header{
 #go{
     position: fixed;
     top: 80px;
+    z-index: 7;
     overflow: hidden;
     visibility: visible;
     width: 100%;
@@ -95,15 +96,15 @@ header{
     border-bottom: 0px solid rgb(99, 99, 99);
     height: 0px;
     background: white;
+    transition: height 0.5s ease, top 0.5s ease, visibility 0s ease 0.5s, border-top 0s ease 0.5s, border-bottom 0s ease 0.5s;
 }
 #go.active{
     top: 0px;
-    z-index: 7;
     height: 100%;
     visibility: visible;
     border-top: 1px solid rgb(99, 99, 99);
     border-bottom: 1px solid rgb(99, 99, 99);
-    transition: height 1s ease, top 1s ease, border-top 0s ease, border-bottom 0s ease;
+    transition: height 1s ease, visibility 0s ease 0s, top 1s ease, border-top 0s ease, border-bottom 0s ease;
 }
 #loaderwrap{
     position: absolute;
@@ -111,12 +112,13 @@ header{
     left: 50%;
     margin-left: -82px;
     padding: 5px;
+    transition: opacity 1s;
 }
-#loaderwrap.ready{
+#loaderwrap.ready:hover{
     cursor: pointer;
     background-color: springgreen;
 }
-#loaderwrap.failed{
+#loaderwrap.failed:hover{
     cursor: pointer;
     background-color: tomato;
 }
@@ -127,12 +129,21 @@ header{
     display:-webkit-flex;
     background-color: khaki;
 }
+#loader.loading{
+    -webkit-animation-name: loading; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.5s;
+}
+@-webkit-keyframes loading{ 
+    0% {opacity: 1;} 
+    50%{opacity: 0.7;} 
+    100%{opacity: 1;}
+}
 #loadertext{
     margin-top: 3px;
     text-align: center;
 }
-
-
 
 
 
@@ -161,40 +172,21 @@ header{
     visibility: visible;
     transition: height 1s ease-in-out, visibility 0s ease 0s, border-bottom 0s ease, background-color 0.5s;
 }
-/*#loginmask{
-    display: none;
-    position: fixed;
-    top: 0;
-    max-width: 900px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.71);
-    z-index: 5;
-    transition: opacity 0.5s ease-in-out 0.5s;
-}
-#login{
-    position: fixed;
-    width: 300px;
-    top: 150px;
-    left: 50%;
-    margin-left: -150px;
-    padding: 5px;
-    transition: 0.5s;
-}
-*/
 #login > p{
     word-wrap: break-word;
     padding-top: 10px;
     margin: 0px 0px 10px 0px;
 }
 #login > label{
+    position: relative;
     float: left;
-    width: 70px;
-    margin-right: 5px;
+    width: 75px;
 }
 #keyin{
-    width: calc(100% - 130px);
+    position: relative;
+    width: calc(100% - 129px);
     margin-bottom: 5px;
+    top: -1px;
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
     border-right: 1px solid #eee;
@@ -203,9 +195,8 @@ header{
 .keybutt{
     float: right;
     display: inline;
-    margin-left: 5px;
     height: 20px;
-    width: 50px;
+    width: 43px;
 }
 
 

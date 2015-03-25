@@ -1,12 +1,21 @@
 $("#golink").click(function(){
-    $("#go").toggleClass("active");
+    $('#loadertext').text("generating playlist");
+    $("#go").addClass("active");
+    $("#loader").addClass("loading");
+    $("#loaderwrap").removeClass("ready");
+    $("#loaderwrap").removeClass("failed");
     clearform();
+    handleAPILoaded();
+    createPlaylist();
         $(this).delay(2000).queue(function(){
+            $("#loader").removeClass("loading");
             $("#loaderwrap").addClass("ready");
             $('#loadertext').text("ready. click to play");
             $(this).dequeue();
         });
         $(this).delay(2000).queue(function(){
+            $("#loader").removeClass("loading");
+            $("#loaderwrap").removeClass("ready");
             $("#loaderwrap").addClass("failed");
             $('#loadertext').text("error... please retry");
             $(this).dequeue();
