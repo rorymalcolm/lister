@@ -5,9 +5,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="main.css" type="text/css"/>
-		<link rel="stylesheet" href="main.css" type="text/css"/>
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lora:400' type='text/css'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
         <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">

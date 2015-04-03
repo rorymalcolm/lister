@@ -5,7 +5,7 @@ try{
     foreach($db->query('SELECT * FROM tracks WHERE playlist_id = '.$playlist_id.' ORDER BY karma DESC') as $row){
         echo '<li id="'.$row['id'].'" class = "trackwrap">';
         echo '<div class = "scorewrap">';
-        echo '<p class = "trackscore">'.$row['karma'].' points</p>';
+        echo '<div class = "trackscore">'.$row['karma'].' points</div>';
         echo '<button class = "upvote" type="button">+</button>';
         echo '<button class = "downvote" type="button">-</button>';
         echo '</div>';

@@ -388,6 +388,9 @@ header{
     text-align: right;
     line-height: 24px;
 }
+.pointstag{
+    display: none:
+}
 .upvote, .downvote{
     display: inline;
     height: 19px;
