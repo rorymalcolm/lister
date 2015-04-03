@@ -5,7 +5,9 @@ function login(){
     var x = $("#keyin").val();
     if (x == "banana"){
         loginmessage("keyword correct. fetching list");
-        $(".scorewrap").hide();
+        $(".deletebutt").show();
+        $(".upvote").hide();
+        $(".downvote").hide();
         $("#keyin").val("");
     }
     else {
@@ -17,3 +19,14 @@ function login(){
         }
     }
 }
+$(".deletebutt").click(function(){
+    var dataString = 'id=' + $(this).closest('.trackwrap').attr("id");
+    $.ajax({
+        type: "POST",
+        url: "includes/delete.php",
+        data: dataString,
+        cache: false,
+        success: function(result){
+        }
+    });
+});

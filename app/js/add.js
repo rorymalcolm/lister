@@ -38,7 +38,9 @@ $("#editlink").click(function(){
         $("#keyin").focus();
     }
     else{
-        $(".scorewrap").show();
+        $(".deletebutt").hide();
+        $(".upvote").show();
+        $(".downvote").show();
         $("#editlink").text("edit");
     }
 });
