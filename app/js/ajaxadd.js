@@ -14,6 +14,7 @@ $(document).ready(function(){
                 data: dataString,
                 cache: false,
                 success: function(result){
+                    loadPosts();
                     clearform();
                 }
             });

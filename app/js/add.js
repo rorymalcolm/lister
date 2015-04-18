@@ -21,37 +21,50 @@ $("#golink").click(function(){
             $(this).dequeue();
         });
 });
+var addfocustimer;
 $("#addlink").click(function(){ 
     $("#add").toggleClass("active");
     if ($("#add").hasClass("active")){
         $("#addlink").text("close");
-        $("#linkin").focus();
+        addfocustimer = setTimeout(
+            function(){
+                $("#linkin").focus();
+            }, 500);
     }
     else{
         $("#addlink").text("add");
+        clearTimeout(addfocustimer);
     }
 });
+var editfocustimer;
 $("#editlink").click(function(){ 
     $("#login").toggleClass("active");
     if ($("#login").hasClass("active")){
         $("#editlink").text("close");
-        $("#keyin").focus();
+        editfocustimer = setTimeout(
+            function(){
+                $("#keyin").focus();
+            }, 1000);
     }
     else{
         $(".deletebutt").hide();
         $(".upvote").show();
         $(".downvote").show();
         $("#editlink").text("edit");
+        clearTimeout(editfocustimer);
     }
 });
 $("#clearbutt").click(function(){
-    clearposts();
+    //clearposts();
     clearform();
-    loadPosts();
+    //loadPosts();
 });
 function clearform(){
     $('#thumbnail').css('background-image', 'none');
     $(".cc").show();
     $("#linkin").val("");
     $("#titlein").val("");
+}
+function clearposts(){
+    $('#tracklist').empty();
 }

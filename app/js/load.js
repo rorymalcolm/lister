@@ -1,3 +1,4 @@
 function loadPosts(){
-    $.post("includes/ajaxloadposts.php", {playlist_id:"0"});
+    $.post("includes/ajaxloadposts.php");
+    return false;
 }
