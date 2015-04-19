@@ -54,7 +54,7 @@
             </div>
         </div>
         <div id="login">
-            <p>to edit, please provide the keyword below</p>
+            <p>to edit, please provide the keyword</p>
                 <label for="keyin">keyword</label>
                 <input id="keyin" name="keyin" type="password" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) login()">
                 <button class = "keybutt" type="button">go</button>
@@ -66,7 +66,7 @@
                     <label for="linkin">link</label>
                     <div>
                         <input id="linkin" name="linkin" type="url" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) document.getElementById('addbutt').click()">
-                        <button id="clearbutt">clear</button>
+                        <button id="clearbutt" onclick="clearform()">clear</button>
                     </div>
                 </div>
                 <div>
@@ -102,19 +102,19 @@
             <?php include("includes/ajaxloadposts.php"); ?>
         </ul>
         <footer>
-            <p id = "us">produce of <a href="https://github.com/rorymalcolm">rory malcolm</a> and <a href = "https://github.com/chrispollock">chris pollock</a><br>&#169; copyright lister 2015</p>
+            <p id = "us">produce of <a href="https://github.com/rorymalcolm">rory malcolm</a> and <a href = "http://chrispollock.uk">chris pollock</a><br>&#169; copyright lister 2015</p>
             <p id = "about"><a href="/dev/lister/about.html">about</a></p>
             
         </footer>
     </body>
     <script src="https://apis.google.com/js/client:plusone.js?onload=makeAPICall" type="text/javascript"></script>
     <script src="js/add.js" type="text/javascript"></script>
-    <script src="js/ajaxadd.js" type="text/javascript"></script>
     <script src="js/auth.js" type="text/javascript"></script>
     <script src="js/drop.js" type="text/javascript"></script>
     <script src="js/go.js" type="text/javascript"></script>
     <script src="js/load.js" type="text/javascript"></script>
     <script src="js/login.js" type="text/javascript"></script>
+    <script src="js/menus.js" type="text/javascript"></script>
     <script src="js/message.js" type="text/javascript"></script>
     <script src="js/tuber.js" type="text/javascript"></script>
     <script src="js/vote.js" type="text/javascript"></script>

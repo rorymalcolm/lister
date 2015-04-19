@@ -4,6 +4,8 @@ $(".keybutt").click(function(){
 function login(){
     var x = $("#keyin").val();
     if (x == "banana"){
+        $("#keyin").attr({'disabled': 'disabled'});
+        $(".keybutt").attr({'disabled': 'disabled'});
         loginmessage("keyword correct. fetching list");
         $(".deletebutt").show();
         $(".upvote").hide();
@@ -19,7 +21,8 @@ function login(){
         }
     }
 }
-$(".deletebutt").click(function(){
+$('#tracklist').on('click','.deletebutt',function(){
+    $(this).closest('.trackwrap').addClass("down");
     var dataString = 'id=' + $(this).closest('.trackwrap').attr("id");
     $.ajax({
         type: "POST",

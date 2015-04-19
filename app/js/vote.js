@@ -1,38 +1,52 @@
-$(".upvote").click(function(){
+$('#tracklist').on('click','.upvote',function(){
     event.preventDefault();
-    $(this).closest('.trackwrap').removeClass("down");
-    $(this).closest('.trackwrap').addClass("up");
-    var dataString = 'id=' + $(this).closest('.trackwrap').attr("id");
+    var wrapperelement = $(this).closest('.trackwrap');
+    var scoreelement = $(this).closest('.scorewrap').children('.trackscore');
+    var dataString = 'id=' + wrapperelement.attr("id");
     $.ajax({
         type: "POST",
         url: "includes/upvote.php",
         data: dataString,
         cache: false,
         success: function(result){
+            wrapperelement.removeClass("down");
+            wrapperelement.addClass("up");
+            var scorestring = scoreelement.text();
+            var scoreup = getscore(scorestring);
+            scoreup++;
+            scoreelement.text(scoreup + " points");
         }
     });
-    loadPosts();
     $(this).delay(700).queue(function(){
-        $(this).closest('.trackwrap').removeClass("up");
+        wrapperelement.removeClass("up");
         $(this).dequeue();
     });
 });
-$(".downvote").click(function(){
+$('#tracklist').on('click','.downvote',function(){
     event.preventDefault();
-    $(this).closest('.trackwrap').removeClass("up");
-    $(this).closest('.trackwrap').addClass("down");
-    var dataString = 'id=' + $(this).closest('.trackwrap').attr("id");
+    var wrapperelement = $(this).closest('.trackwrap');
+    var scoreelement = $(this).closest('.scorewrap').children('.trackscore');
+    var dataString = 'id=' + wrapperelement.attr("id");
     $.ajax({
         type: "POST",
         url: "includes/downvote.php",
         data: dataString,
         cache: false,
         success: function(result){
+            wrapperelement.removeClass("up");
+            wrapperelement.addClass("down");
+            var scorestring = scoreelement.text();
+            var scoredown = getscore(scorestring);
+            scoredown--;
+            scoreelement.text(scoredown + " points");
         }
     });
-    loadPosts();
     $(this).delay(700).queue(function(){
-        $(this).closest('.trackwrap').removeClass("down");
+        wrapperelement.removeClass("down");
         $(this).dequeue();
     });
 });
+function getscore(scorestring){
+    var score = scorestring.split(" ");
+    return parseInt(score[0]);
+}

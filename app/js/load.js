@@ -1,4 +1,6 @@
+function clearposts(){
+    $('#tracklist').empty();
+}
 function loadPosts(){
-    $.post("includes/ajaxloadposts.php");
-    return false;
+    $("#tracklist").load("includes/ajaxloadposts.php");
 }
