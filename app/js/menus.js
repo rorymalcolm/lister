@@ -40,12 +40,18 @@ $("#addlink").click(function(){
         $("#addlink").text("add");
     }
 });
+function clearform(){
+    $('#thumbnail').css('background-image', 'none');
+    $(".cc").show();
+    $("#linkin").val("");
+    $("#titlein").val("");
+}
 //clicking "edit"
 var editfocustimer;
 $("#editlink").click(function(){ 
-    $("#login").toggleClass("active");
     //open edit
-    if ($("#login").hasClass("active")){
+    if (!($("#login").hasClass("active"))){
+        $("#login").addClass("active");
         $("#editlink").text("close");
         editfocustimer = setTimeout(
             function(){
@@ -55,6 +61,11 @@ $("#editlink").click(function(){
     //close edit
     else{
         clearTimeout(editfocustimer);
+        if (datastring !== ""){
+            rundelete();
+        }
+        
+        $("#login").removeClass("active");
         $(".deletebutt").hide();
         $(".upvote").show();
         $(".downvote").show();
@@ -66,9 +77,3 @@ $("#editlink").click(function(){
         }
     }
 });
-function clearform(){
-    $('#thumbnail').css('background-image', 'none');
-    $(".cc").show();
-    $("#linkin").val("");
-    $("#titlein").val("");
-}

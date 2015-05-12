@@ -1,11 +1,20 @@
-@font-face {
-  font-family: 'NeueHaas';
-  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
+/*               VARIABLES              */
+$khaki: khaki;
+
+$successgreen: springgreen;
+$errorred: tomato;
+
+$white: white;
+$frostedwhite: rgba(255, 255, 255, 0.71);
+
+$textgray: rgb(87, 87, 87);
+$textgray2: rgb(56, 56, 56);
+$bordergray: rgb(99, 99, 99);
+
+
+
+/*               MIXINS              */
+//@mixin 
 
 
 
@@ -17,13 +26,13 @@
     box-sizing: border-box;
 }
 ::selection {
-  background: khaki;
+  background: $khaki;
 }
 ::-moz-selection {
-  background: khaki;
+  background: $khaki;
 }
 html{
-    background: white;
+    background: $white;
     font-family: 'Lora', serif;
 }
 html, html a{
@@ -33,8 +42,8 @@ html, html a{
 body{
     margin: auto;
     max-width: 900px;
-    background: white;
-    color: rgb(87, 87, 87);
+    background: $white;
+    color: $textgray;
 }
 
 
@@ -55,22 +64,19 @@ header{
     position: relative;
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid;
-    padding-right: 20px;
+    border-bottom: 1px solid $bordergray;
+    padding: 0 20px;
 }
 #logo{
     position: absolute;
     font-size: 32px;
     font-weight: 100;
-    top: 0px;
-    left: 20px;
     line-height: 32px;
 }
 #sub{
     position: absolute;
     font-size: 10px;
     top: 40px;
-    left: 20px;
 }
 .headerlinks{
     position: relative;
@@ -79,10 +85,11 @@ header{
     font-size: 15px;
     padding: 5px;
     top: 12px;
-}
-.headerlinks:hover{
-    cursor: pointer;
-    background-color: khaki;
+    
+    &:hover{
+        cursor: pointer;
+        background-color: $khaki;
+    }
 }
 
 
@@ -103,18 +110,18 @@ header{
     visibility: visible;
     width: 100%;
     max-width: 900px;
-    border-top: 0px solid rgb(99, 99, 99);
-    border-bottom: 0px solid rgb(99, 99, 99);
+    border-top: 0px solid $bordergray;
+    border-bottom: 0px solid $bordergray;
     height: 0px;
-    background: white;
+    background: $white;
     transition: height 0.5s ease, top 0.5s ease, visibility 0s ease 0.5s, border-top 0s ease 0.5s, border-bottom 0s ease 0.5s;
 }
 #go.active{
     top: 0px;
     height: 100%;
     visibility: visible;
-    border-top: 1px solid rgb(99, 99, 99);
-    border-bottom: 1px solid rgb(99, 99, 99);
+    border-top: 1px solid $bordergray;
+    border-bottom: 1px solid $bordergray;
     transition: height 1s ease, visibility 0s ease 0s, top 1s ease, border-top 0s ease, border-bottom 0s ease;
 }
 #loaderwrap{
@@ -127,18 +134,18 @@ header{
 }
 #loaderwrap.ready:hover{
     cursor: pointer;
-    background-color: springgreen;
+    background-color: $successgreen;
 }
 #loaderwrap.failed:hover{
     cursor: pointer;
-    background-color: tomato;
+    background-color: $errorred;
 }
 #loader{
     width: 160px;
     height: 80px;
     display: flex;
     display:-webkit-flex;
-    background-color: khaki;
+    background-color: $khaki;
 }
 #loader.loading{
     -webkit-animation-name: loading; 
@@ -175,12 +182,12 @@ header{
     height: 0px;
     padding-left: 20px;
     padding-right: 20px;
-    border-bottom: 0px solid rgb(99, 99, 99);
+    border-bottom: 0px solid $bordergray;
     transition: height 1s ease-in-out, visibility 0s ease 1s, border-bottom 0s ease 1s;
 }
 #login.active{
     height: 75px;
-    border-bottom: 1px solid rgb(99, 99, 99);
+    border-bottom: 1px solid $bordergray;
     visibility: visible;
     transition: height 1s ease-in-out, visibility 0s ease 0s, border-bottom 0s ease, background-color 0.5s;
 }
@@ -199,10 +206,6 @@ header{
     width: calc(100% - 129px);
     margin-bottom: 5px;
     top: -1px;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
 }
 .keybutt{
     float: right;
@@ -213,6 +216,7 @@ header{
 .deletebutt{
     display: none;
     margin-left: 3px;
+    height: 19px;
 }
 
 
@@ -234,12 +238,12 @@ header{
     height: 0px;
     padding-left: 20px;
     padding-right: 20px;
-    border-bottom: 0px solid rgb(99, 99, 99);
+    border-bottom: 0px solid $bordergray;
     transition: height 1s ease-in-out, visibility 0s ease 1s, border-bottom 0s ease 1s;
 }
 #add.active{
     height: 100px;
-    border-bottom: 1px solid rgb(99, 99, 99);
+    border-bottom: 1px solid $bordergray;
     visibility: visible;
     transition: height 1s ease-in-out, visibility 0s ease 0s, border-bottom 0s ease, -webkit-filter 0.2s;
 }
@@ -264,35 +268,22 @@ header{
 }
 #linkin, #titlein{
     width: 100%;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
 }
 #clearbutt{
     position: absolute;
-    border:1px solid transparent;
     right: 170px;
     top: 14px;
     height: 16px;
     line-height: 16px;
     padding: 0px 5px 0px 5px;
+    border:1px solid transparent;
     border-left: 1px solid #ccc;
     border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
-#clearbutt:after {
-	width: 15px;
-	height: 10px;
-	z-index:1;
-}
-#titlein:not(:valid) ~ #clearbutt {
-	display: none;
-}
 #addbutt{
     background: none!important;
     float: right;
-    border: 1px solid rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 #addbutt:focus{
@@ -330,7 +321,7 @@ header{
     text-align: center;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.71);
+    background-color: $frostedwhite;
     display: none;
 }
 @media (max-width: 500px){
@@ -373,7 +364,7 @@ header{
 #tracklist{
     margin: 0;
     list-style-type: none;
-    background: white;
+    background: $white;
     padding: 10px 20px 10px 20px;
 }
 .trackwrap{
@@ -406,9 +397,6 @@ header{
     text-align: right;
     line-height: 24px;
 }
-.pointstag{
-    display: none:
-}
 .upvote, .downvote{
     display: inline;
     height: 19px;
@@ -429,10 +417,9 @@ footer{
     position: relative;
     width: 100%;
     height: 40px;
-    color: rgb(90, 90, 90);
-    background: white;
-    border-top: 1px solid rgb(99, 99, 99);
-    border-bottom: 1px solid rgb(99, 99, 99);
+    background: $white;
+    border-top: 1px solid $bordergray;
+    border-bottom: 1px solid $bordergray;
 }
 #us{
     position: absolute;
@@ -458,15 +445,15 @@ footer{
 /*               COLOURS              */
 
 .up{
-    background: springgreen;
+    background: $successgreen;
     transition: 0.5s;
 }
 .down{
-    background: tomato;
+    background: $errorred;
     transition: 0.5s;
 }
 .waiting{
-    background: rgba(255, 157, 0, 0.4);
+    background: $khaki;
     transition: 0.5s;
 }
 
@@ -486,7 +473,7 @@ footer{
     text-align: center;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.71);
+    background-color: $frostedwhite;
     display: none;
 }
 .loginmessage{
@@ -505,16 +492,17 @@ noscript p{
     padding-left: 10px;
     padding-right: 10px;
 }
+button, input{
+    font-family: 'Lora', serif;
+    color: $textgray2;
+}
 button, #addbutt{
-    background: white;
+    background: $white;
     border-top: 1px solid #eee;
     border-left: 1px solid #eee;
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
-}
-button:focus, #addbutt:focus{
-    outline: none!important;
 }
 button:active, #addbutt:active{
     border-top: 1px solid #ccc;
@@ -522,29 +510,24 @@ button:active, #addbutt:active{
     border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
+button:focus, input:focus{
+    outline: none!important;
+}
 button:disabled, input:disabled{
-    background: rgb(253, 253, 253);
+    background: $frostedwhite;
     color: rgb(141, 141, 141);
 }
 input{
-    border:1px solid rgb(99, 99, 99);
-}
-input:focus{
-    outline: none;
-}
-input, button{
-    font-family: 'Lora', serif;
-    color: rgb(56, 56, 56);
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;    
 }
 a{
     text-decoration: none;
-    color: rgb(87, 87, 87);
+    color: $textgray;
+    
+    &:hover{
+        background-color: $khaki;
+    }
 }
-a:hover{
-    /*text-decoration: underline;*/
-    background-color: khaki;
-    text-decoration-color: rgb(220, 20, 242);
-}
-/*a:visited{
-    color: green;
-}*/

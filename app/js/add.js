@@ -5,7 +5,7 @@ $(document).ready(function(){
 // Returns successful data submission message when the entered information is stored in database.
         var dataString = 'title='+ title + '&url='+ url;
         if(title==''||url==''){
-            addmessage("please fill in all fields");
+            addmessage("you need to add something");
         }
         else{
             $.ajax({

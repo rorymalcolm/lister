@@ -4,7 +4,7 @@
         <title>lister</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="main.css" type="text/css"/>
+		<link rel="stylesheet" href="screen.css" type="text/css"/>
         <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lora:400' type='text/css'>
         <script src="js/jquery.min.js"></script>
         <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
@@ -65,8 +65,8 @@
                 <div>
                     <label for="linkin">link</label>
                     <div>
-                        <input id="linkin" name="linkin" type="url" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) document.getElementById('addbutt').click()">
                         <button id="clearbutt" onclick="clearform()">clear</button>
+                        <input id="linkin" name="linkin" type="url" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) document.getElementById('addbutt').click()">
                     </div>
                 </div>
                 <div>
@@ -99,7 +99,7 @@
             <p class="down">your browser is not running javascript. you should update or enable scripts in order to vote, add and generate playlists.</p>
         </noscript>
         <ul id = "tracklist">
-            <?php include("includes/ajaxloadposts.php"); ?>
+            <noscript><?php include("includes/ajaxloadposts.php"); ?></noscript>
         </ul>
         <footer>
             <p id = "us">produce of <a href="https://github.com/rorymalcolm">rory malcolm</a> and <a href = "http://chrispollock.uk">chris pollock</a><br>&#169; copyright lister 2015</p>
