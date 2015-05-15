@@ -56,7 +56,7 @@ $("#editlink").click(function(){
         editfocustimer = setTimeout(
             function(){
                 $("#keyin").focus();
-            }, 1000);
+            }, 700);
     }
     //close edit
     else{
@@ -66,6 +66,9 @@ $("#editlink").click(function(){
         }
         
         $("#login").removeClass("active");
+        setTimeout(function(){
+            $("#login").removeClass("loggedin");
+        }, 1000);
         $(".deletebutt").hide();
         $(".upvote").show();
         $(".downvote").show();

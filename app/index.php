@@ -54,12 +54,17 @@
             </div>
         </div>
         <div id="login">
-            <p>to edit, please provide the keyword</p>
+            <div id="loginwrap">
+                <p>to edit, please provide the keyword</p>
                 <label for="keyin">keyword</label>
                 <input id="keyin" name="keyin" type="password" autocomplete="off" spellcheck="false" maxlength="255" onkeydown="if (event.keyCode == 13) login()">
-                <button class = "keybutt" type="button">go</button>
-            <div class="loginmessage"></div>
+                <button class="keybutt" type="button">go</button>
             </div>
+            <div id="adminpanel">
+                <p>hhhh</p>
+            </div>
+            <div class="loginmessage"></div>
+        </div>
         <div id = "add">
             <div id = "addform">
                 <div>
@@ -96,15 +101,16 @@
             <div id="dropmessage">drop here to add</div>
         </div>
         <noscript>
-            <p class="down">your browser is not running javascript. you should update or enable scripts in order to vote, add and generate playlists.</p>
+            <div id="noscriptwrap">
+                <p>your browser is not running javascript. you should update it or enable scripts in order to vote, add and generate playlists.</p>
+            </div>
         </noscript>
         <ul id = "tracklist">
             <noscript><?php include("includes/ajaxloadposts.php"); ?></noscript>
         </ul>
         <footer>
             <p id = "us">produce of <a href="https://github.com/rorymalcolm">rory malcolm</a> and <a href = "http://chrispollock.uk">chris pollock</a><br>&#169; copyright lister 2015</p>
-            <p id = "about"><a href="/dev/lister/about.html">about</a></p>
-            
+            <p id = "about"><a href="/dev/lister/about.html">about</a> / 15-5-15</p>
         </footer>
     </body>
     <script src="https://apis.google.com/js/client:plusone.js?onload=makeAPICall" type="text/javascript"></script>

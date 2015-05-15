@@ -6,7 +6,8 @@ function login(){
     if (x == "banana"){
         $("#keyin").attr({'disabled': 'disabled'});
         $(".keybutt").attr({'disabled': 'disabled'});
-        loginmessage("keyword correct. fetching list");
+        loginmessage("you're in");
+        $('#login').addClass("loggedin");
         $(".deletebutt").show();
         $(".upvote").hide();
         $(".downvote").hide();
