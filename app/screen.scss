@@ -338,6 +338,9 @@ header{
     background-color: $frostedwhite;
     display: none;
 }
+.addmessage{
+    line-height: 100px;
+}
 @media (max-width: 500px){
     #add.active{
         height: 140px;
@@ -363,7 +366,7 @@ header{
     #addbutt{
         float: right;
     }
-    #dropmessage{
+    #dropmessage, .addmessage{
         line-height: 140px;
     }
 }
@@ -385,7 +388,7 @@ header{
     p{
         margin: 0;
         text-align: center;
-        background-color: $khaki;
+        //background-color: $khaki;
     }
 }
 .trackwrap{
@@ -502,9 +505,6 @@ footer{
 }
 .loginmessage{
     line-height: 75px;
-}
-.addmessage{
-    line-height: 100px;
 }
 #aboutmain{
     padding: 10px 20px 10px 20px;
