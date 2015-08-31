@@ -484,6 +484,12 @@ footer{
     transition: 0.5s;
 }
 
+.up, .down, .waiting{
+    .tracklink{
+        pointer-events: none;
+        cursor: default;
+    }
+}
 
 
 
