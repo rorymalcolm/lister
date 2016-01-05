@@ -114,7 +114,7 @@
         </ul>
         <footer>
             <p id = "us">produce of <a href="https://github.com/rorymalcolm">rory malcolm</a> and <a href = "http://chrispollock.uk">chris pollock</a><br>&#169; copyright lister 2015</p>
-            <p id = "about"><a href="./about.html">about</a> / 15-5-15</p>
+            <p id = "about"><a href="./about.html">about</a> / 5-1-16</p>
         </footer>
     </body>
     <script src="https://apis.google.com/js/client:plusone.js?onload=makeAPICall" type="text/javascript"></script>
