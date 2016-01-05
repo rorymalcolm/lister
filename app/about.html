@@ -21,18 +21,23 @@
         <link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
         <link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
         <link rel="manifest" href="ico/manifest.json">
+        <link rel="shortcut icon" href="ico/favicon.ico">
+        <meta name="apple-mobile-web-app-title" content="Lister">
+        <meta name="application-name" content="Lister">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="ico/mstile-144x144.png">
-        <meta name="theme-color" content="#3b3b3b">
+        <meta name="msapplication-config" content="ico/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
         <style>
             #logo a{background-color: transparent;}
             #logo a:hover{background-color: khaki;}
             a{background-color: khaki;}
+            .done{text-decoration: line-through; color: #00ff7f;}
         </style>
 	</head>
     <body>
         <header>
-            <h1 id = "logo"><a href="/dev/lister/index.php">Lister</a></h1>
+            <h1 id = "logo"><a href="./">Lister</a></h1>
             <p id = "sub">we have an open plan office</p>
         </header>
         <div id="aboutmain">
@@ -44,13 +49,14 @@
            <p>to do list</p>
             <ul>
                 <li class="trackwrap">something really cool</li>
-                <li class="trackwrap" style="text-decoration: line-through">add feature</li>
-                <li class="trackwrap">edit feature for list host</li>
-                <li class="trackwrap" style="text-decoration: line-through">vote buttons</li>
-                <li class="trackwrap" style="text-decoration: line-through">delete entries feature for hosts</li>
+                <li class="trackwrap">migrate to angularjs</li>                
+                <li class="trackwrap done">drag feature</li>
+                <li class="trackwrap">controls for list hosts</li>
+                <li class="trackwrap done">vote buttons</li>
+                <li class="trackwrap done">delete entries feature for hosts</li>
                 <li class="trackwrap">language support</li>
-                <li class="trackwrap" style="text-decoration: line-through">auto-refresh feed on add and vote</li>
-                <li class="trackwrap">new favicon design</li>
+                <li class="trackwrap done">auto-refresh feed on add and vote</li>
+                <li class="trackwrap done">new favicon design</li>
                 <li class="trackwrap">youtube playlist generation</li>
             </ul>
             <p>change log</p>
@@ -67,7 +73,7 @@
         </div>
         <footer>
             <p id = "us">produce of <a href="https://github.com/roryem">rory malcolm</a> and <a href = "http://chrispollock.uk">chris pollock</a><br>&#169; copyright listar 2015</p>
-            <p id = "about"><a href="/about.html">about</a></p>    
+            <p id = "about"><a href="./about.html">about</a></p>    
         </footer>
     </body>
 </html>

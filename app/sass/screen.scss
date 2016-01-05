@@ -35,7 +35,8 @@ $maxwidth: 900px;
 }
 html{
     background: $white;
-    font-family: 'Lora', serif;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-style: italic;
 }
 html, html a{
     -webkit-font-smoothing: antialiased !important;
@@ -72,6 +73,7 @@ header{
 #logo{
     position: absolute;
     font-size: 32px;
+    font-style: normal;
     font-weight: 100;
     line-height: 32px;
 }

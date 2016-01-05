@@ -5,29 +5,29 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/screen.css" type="text/css"/>
-        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lora:400' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
         <script src="js/jquery.min.js"></script>
-        <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png?v=bOORN0L6vn">
-        <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png?v=bOORN0L6vn">
-        <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png?v=bOORN0L6vn">
-        <link rel="apple-touch-icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png?v=bOORN0L6vn">
-        <link rel="apple-touch-icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png?v=bOORN0L6vn">
-        <link rel="apple-touch-icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png?v=bOORN0L6vn">
-        <link rel="apple-touch-icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png?v=bOORN0L6vn">
-        <link rel="apple-touch-icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png?v=bOORN0L6vn">
-        <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png?v=bOORN0L6vn">
-        <link rel="icon" type="image/png" href="ico/favicon-32x32.png?v=bOORN0L6vn" sizes="32x32">
-        <link rel="icon" type="image/png" href="ico/favicon-194x194.png?v=bOORN0L6vn" sizes="194x194">
-        <link rel="icon" type="image/png" href="ico/favicon-96x96.png?v=bOORN0L6vn" sizes="96x96">
-        <link rel="icon" type="image/png" href="ico/android-chrome-192x192.png?v=bOORN0L6vn" sizes="192x192">
-        <link rel="icon" type="image/png" href="ico/favicon-16x16.png?v=bOORN0L6vn" sizes="16x16">
-        <link rel="manifest" href="ico/manifest.json?v=bOORN0L6vn">
-        <link rel="shortcut icon" href="ico/favicon.ico?v=bOORN0L6vn">
+        <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="ico/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="ico/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="ico/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="ico/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="ico/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="ico/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="ico/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="ico/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="ico/manifest.json">
+        <link rel="shortcut icon" href="ico/favicon.ico">
         <meta name="apple-mobile-web-app-title" content="Lister">
         <meta name="application-name" content="Lister">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="ico/mstile-144x144.png?v=bOORN0L6vn">
-        <meta name="msapplication-config" content="ico/browserconfig.xml?v=bOORN0L6vn">
+        <meta name="msapplication-TileImage" content="ico/mstile-144x144.png">
+        <meta name="msapplication-config" content="ico/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
@@ -114,7 +114,7 @@
         </ul>
         <footer>
             <p id = "us">produce of <a href="https://github.com/rorymalcolm">rory malcolm</a> and <a href = "http://chrispollock.uk">chris pollock</a><br>&#169; copyright lister 2015</p>
-            <p id = "about"><a href="/dev/lister/about.html">about</a> / 15-5-15</p>
+            <p id = "about"><a href="./about.html">about</a> / 15-5-15</p>
         </footer>
     </body>
     <script src="https://apis.google.com/js/client:plusone.js?onload=makeAPICall" type="text/javascript"></script>
